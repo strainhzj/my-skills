@@ -1,0 +1,34 @@
+{
+  "name": "my-skills",
+  "id": "my-skills",
+  "owner": {
+    "name": "strainhzj"
+  },
+  "metadata": {
+    "description": "Personal AI Assistant Skill for idea recording and tracking with intelligent analysis based on project context",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "idea-recorder",
+      "source": "./.claude/skills/idea-recorder",
+      "description": "Idea recording and tracking system with intelligent analysis based on project context. Automatically saves ideas as independent Markdown files with user input, project cognitive analysis, questions, and improvement suggestions. Perfect for tracking development ideas, feature requests, and optimization opportunities.",
+      "version": "1.0.0",
+      "author": {
+        "name": "strainhzj"
+      },
+      "keywords": [
+        "idea",
+        "recording",
+        "tracking",
+        "notes",
+        "brainstorming",
+        "project-analysis",
+        "feature-tracking",
+        "development-ideas"
+      ],
+      "category": "productivity",
+      "strict": false
+    }
+  ]
+}
