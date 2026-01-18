@@ -12,20 +12,32 @@
     {
       "name": "idea-recorder",
       "source": "./.claude/skills/idea-recorder",
-      "description": "Idea recording and tracking system with intelligent analysis based on project context. Automatically saves ideas as independent Markdown files with user input, project cognitive analysis, questions, and improvement suggestions. Perfect for tracking development ideas, feature requests, and optimization opportunities.",
+      "description": "记录用户的想法并基于项目认知提供分析和建议。当用户说\"记录我的想法\"、\"有个想法\"、\"记录想法\"或类似语句时触发。自动将想法保存为独立的 Markdown 文件,包含用户原句、基于项目认知的分析、疑问点和改进建议。",
       "version": "1.0.0",
       "author": {
         "name": "strainhzj"
       },
       "keywords": [
-        "idea",
-        "recording",
-        "tracking",
-        "notes",
-        "brainstorming",
-        "project-analysis",
-        "feature-tracking",
-        "development-ideas"
+        "markdown"
+      ],
+      "category": "productivity",
+      "strict": false
+    },
+    {
+      "name": "skill-registrar",
+      "source": "./.claude/skills/skill-registrar",
+      "description": "Automatically register new skills in the my-skills project. Detects new skill directories in .claude/skills/, extracts metadata from SKILL.md, updates marketplace.json with complete plugin configuration, and performs git operations (add, commit, push). Triggered by keywords: \"注册技能\", \"添加技能\", \"注册新技能\", \"skill register\", \"register skill\". Use when user adds a new skill to the project and wants to register it in marketplace.json and push to GitHub.",
+      "version": "1.0.0",
+      "author": {
+        "name": "strainhzj"
+      },
+      "keywords": [
+        "git",
+        "automatically",
+        "register",
+        "skills",
+        "skills",
+        "project"
       ],
       "category": "productivity",
       "strict": false
