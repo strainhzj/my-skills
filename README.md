@@ -40,32 +40,42 @@
 |-------|------|----------|
 | **idea-recorder** | 想法记录和追踪，基于项目认知提供智能分析 | "记录我的想法"、"有个想法"、"记录想法" |
 
-## 🚀 快速开始
+## Installation
 
-### 方式 1: 直接复制（推荐）
+### Using Claude Marketplace (Claude Code)
+
+Install directly in Claude Code with two commands:
+
+```
+/plugin marketplace add strainhzj/my-skills
+/plugin install idea-recorder@my-skills
+```
+
+### Manual Installation
+
+Copy the appropriate folders to your project:
+
+| AI Assistant   | Folders to Copy                                    |
+| -------------- | -------------------------------------------------- |
+| Claude Code    | `.claude/skills/idea-recorder/`                    |
+
+#### Step-by-step Manual Installation
 
 ```bash
-# 1. 克隆仓库
+# 1. Clone the repository
 git clone https://github.com/strainhzj/my-skills.git
 cd my-skills
 
-# 2. 复制到你的项目
+# 2. Copy to your project (Claude Code)
 cp -r .claude /path/to/your/project/
 
-# 3. 在 Claude Code 中使用
-# 打开 Claude Code，开始对话，skill 会根据上下文自动激活
+# 3. Start using in Claude Code
+# The skill will activate automatically based on context
 ```
 
-### 方式 2: 符号链接
+### Verify Installation
 
-```bash
-# 创建符号链接到项目目录
-ln -s /path/to/my-skills/.claude /path/to/your/project/.claude
-```
-
-### 验证安装
-
-在 Claude Code 中测试：
+Test in Claude Code:
 
 ```
 记录我的想法: 测试 idea-recorder skill
@@ -133,7 +143,7 @@ IDEA-YYYYMMDD-HHMMSS-[关键词].md
 - `IDEA-20250117-143000-用户认证优化.md`
 - `IDEA-20250117-150500-下载器状态同步.md`
 
-## 🏗️ 项目结构
+## Project Structure
 
 ```
 my-skills/
@@ -212,31 +222,31 @@ my-skills/
 4. 保存到 ideas 目录
 5. 更新想法索引
 
-## 🔧 技术栈
+## Tech Stack
 
 - **AI Assistant**: Claude Code
-- **语言**: Markdown
-- **版本管理**: Git
-- **适用项目**: 任何需要记录想法的项目
+- **Language**: Markdown
+- **Version Control**: Git
+- **Target Projects**: Any project that needs idea tracking
 
-## 🤝 贡献
+## Contributing
 
-这是个人 skill 仓库，主要用于个人使用和知识积累。欢迎：
-- 🐛 报告问题
-- 💡 提出建议
-- 📖 分享使用经验
-- 🔄 Fork 并自定义
+This is a personal skill repository, mainly for personal use and knowledge accumulation. Contributions are welcome:
+- 🐛 Report issues
+- 💡 Suggest features
+- 📖 Share usage experience
+- 🔄 Fork and customize
 
-## 📄 许可证
+## License
 
-本项目采用 [MIT License](LICENSE) 开源协议。
+This project is licensed under the [MIT License](LICENSE).
 
-## 🔗 相关资源
+## Resources
 
-- [Claude Code 官方文档](https://github.com/anthropics/claude-code)
-- [参考项目: ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+- [Claude Code Official Documentation](https://github.com/anthropics/claude-code)
+- [Reference Project: ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 
-## 📮 联系方式
+## Contact
 
 - GitHub: [@strainhzj](https://github.com/strainhzj)
 
