@@ -41,6 +41,22 @@
       ],
       "category": "productivity",
       "strict": false
+    },
+    {
+      "name": "subtitle-extractor",
+      "source": "./.claude/skills/subtitle-extractor",
+      "description": "中文字幕提取技能,用于从ASS格式双语字幕文件中提取中文字幕并输出到output文件夹。使用场景: (1) 用户明确要求提取中文字幕,如\"提取中文字幕\"、\"处理字幕文件\"、\"extract Chinese subtitles\" (2) 用户提供字幕文件路径,要求处理该文件 (3) 用户提供目录路径,要求批量处理目录下的字幕文件。支持单个文件和批量目录处理,自动输出到项目根目录的output文件夹。",
+      "version": "1.0.0",
+      "author": {
+        "name": "strainhzj"
+      },
+      "keywords": [
+        "extract",
+        "chinese",
+        "subtitles"
+      ],
+      "category": "productivity",
+      "strict": false
     }
   ]
 }
