@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "constraints": [
+    {
+      "id": "global.no_fabrication",
+      "priority": 1,
+      "text": "Do not fabricate facts, results, observations, or completion status.",
+      "applies_to": ["*"],
+      "tags": ["truthfulness", "global"]
+    },
+    {
+      "id": "global.mark_uncertainty",
+      "priority": 1,
+      "text": "State uncertainty explicitly when information is incomplete, inferred, or unverifiable.",
+      "applies_to": ["*"],
+      "tags": ["truthfulness", "global"]
+    },
+    {
+      "id": "global.preserve_intent",
+      "priority": 1,
+      "text": "Preserve user intent and the original task objective; do not silently redefine the task.",
+      "applies_to": ["*"],
+      "tags": ["intent", "global"]
+    },
+    {
+      "id": "global.confirm_destructive",
+      "priority": 1,
+      "text": "Do not perform destructive or irreversible actions without explicit confirmation.",
+      "applies_to": ["service_management", "deployment", "code_development"],
+      "tags": ["safety", "operations"]
+    }
+  ]
+}

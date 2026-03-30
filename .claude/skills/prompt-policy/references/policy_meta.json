@@ -1,0 +1,41 @@
+{
+  "skill": "prompt-policy",
+  "version": "1.0.0",
+  "policy_mode": "intent-frozen_constraints-mergeable",
+  "default_action": "bypass_if_not_needed",
+  "constraint_section_name": "Constraints",
+  "priority_levels": [
+    {
+      "level": 1,
+      "name": "Critical",
+      "description": "Non-negotiable policy constraints"
+    },
+    {
+      "level": 2,
+      "name": "Task-Specific",
+      "description": "Constraints selected by task type"
+    },
+    {
+      "level": 3,
+      "name": "Output-Style",
+      "description": "Low-priority format or style constraints"
+    }
+  ],
+  "detect_markers": [
+    "Constraints",
+    "Rules",
+    "Guardrails",
+    "Requirements",
+    "Notes",
+    "Safety",
+    "Review Criteria",
+    "Output Rules"
+  ],
+  "forbidden_actions": [
+    "rewrite_task_intent",
+    "rewrite_task_objective",
+    "change_requested_deliverable",
+    "add_new_business_requirements",
+    "override_user_intent_silently"
+  ]
+}
